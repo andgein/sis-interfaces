@@ -53,6 +53,7 @@ section.events {
 	}
 
 	.events__event__location + .events__event__additional-info {
+		display: block;
 		margin-left: 0;
 	}
 }
