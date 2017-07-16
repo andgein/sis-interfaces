@@ -26,20 +26,20 @@
 	content: '.';
 }
 
-.lessons__lesson__additional-links {
+.lessons__lesson__additional-info {
 	margin-top: 5px;
 	font-size: 16px;
 	font-weight: 300;
 }
 
-.lessons__lesson__additional-links a {
+.lessons__lesson__additional-info a {
 	display: inline-block;
 	margin-left: 30px;
 	color: rgba(33, 33, 179, 0.8);
 }
 
 @media (max-width: 940px) {
-	.lessons__lesson__additional-links a {
+	.lessons__lesson__additional-info a {
 		margin-left: 15px;
 	}
 }
@@ -53,6 +53,6 @@
 	border-bottom-color: rgba(0, 143, 0, 0.3);
 }
 
-.lessons__lesson:first-child .lessons__lesson__additional-links a {
+.lessons__lesson:first-child .lessons__lesson__additional-info a {
 	color: rgba(0, 143, 0, 0.8);
 }
