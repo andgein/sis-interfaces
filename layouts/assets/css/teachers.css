@@ -1,0 +1,39 @@
+.teachers__teacher {
+	font-size: 20px;
+	font-weight: 300;
+	position: relative;
+	height: 92px;	
+	margin-top: 15px;
+}
+
+.teachers__teacher + .teachers__teacher {
+	margin-top: 20px;
+}
+
+.teachers__teacher img.avatar {
+	float: left;
+	width: 90px;
+	height: 90px;
+	margin-right: 8px;
+}
+
+.teachers__teacher__info {
+	line-height: 22px;
+}
+
+.teachers__teacher__social {
+	position: absolute;
+	bottom: 0px;
+	left: 100px;
+}
+
+.teachers__teacher__social a {
+	border-bottom-width: 0;
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.teachers__teacher__social img {
+	width: 20px;
+	height: auto;
+}

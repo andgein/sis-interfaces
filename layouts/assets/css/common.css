@@ -1,0 +1,124 @@
+* {
+	font-family: 'Exo 2', sans-serif;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #2121b3;
+	border-bottom: 1px solid rgba(33, 33, 179, 0.3);
+}
+
+a:hover {
+	color: #6a6aef;
+	border-bottom-color: rgba(106, 106, 239, 0.3);
+}
+
+main {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	width: 100%;
+}
+
+header nav ul {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: -1em;
+}
+
+header nav ul > li {
+	display: inline-block;
+	letter-spacing: normal;
+}
+
+/* Main menu */
+header nav.main-menu {
+	background-color: #000;	
+}
+
+header nav.main-menu ul > li {
+	font-size: 24px;
+	font-weight: 200;
+	color: white;	
+	border-bottom: 3px solid transparent;
+}
+
+header nav.main-menu ul > li.current {
+	font-weight: 500;
+	border-bottom-color: #faa41a;
+	padding: 13px 25px 12px;
+}
+
+header nav.main-menu ul > li:not(.current):hover {
+	color: #faa41a;
+}
+
+header nav.main-menu ul > li > a {
+	color: inherit;
+	border-bottom-width: 0;
+	padding: 13px 25px 12px;
+	display: inline-block;
+}
+
+/* Parallels menu */
+header nav.parallels-menu ul > li {
+	font-size: 24px;
+	font-weight: 300;
+	vertical-align: top;
+}
+
+header nav.parallels-menu ul > li > a {
+	padding: 10px 17px 12px;
+	display: inline-block;
+	border-bottom: 0;
+}
+
+header nav.parallels-menu ul > li > a .parallel-name {
+	border-bottom: 1px solid rgba(33, 33, 179, 0.3);
+}
+
+header nav.parallels-menu ul > li > a:hover .parallel-name {
+	border-bottom-color: rgba(106, 106, 239, 0.3);
+}
+
+/* Rows and columns */
+.row {
+	display: block;
+	width: 100%;
+	margin-left: -60px;
+	margin-right: -60px;
+}
+
+.row .column {
+	width: 50%;
+	padding-left: 60px;
+	padding-right: 60px;
+	float: left;
+}
+
+/* Sections */
+section {
+	margin-top: 30px;
+}
+
+section .section__title {
+	font-size: 30px;
+	font-weight: 300;
+	border-bottom: 1px solid rgb(230, 230, 230);
+	padding-bottom: 9px;
+}
+
+section .section__title .additional-links {
+	font-size: 16px;
+	float: right;
+	margin-top: 9px;
+}
+
+section .section__body {
+	margin-top: 10px;
+}

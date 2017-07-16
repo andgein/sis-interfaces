@@ -1,0 +1,52 @@
+.lessons__lesson {
+	position: relative;
+	margin-top: 10px;
+}
+
+.lessons__lesson__index,
+.lessons__lesson__title {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.lessons__lesson__index {
+    position: absolute;
+    left: -30px;
+    width: 19px;
+    text-align: right;
+    color: rgb(115, 115, 115);
+    display: none;
+}
+
+.lessons__lesson:hover .lessons__lesson__index {
+	display: block;
+}
+
+.lessons__lesson__index::after {
+	content: '.';
+}
+
+.lessons__lesson__additional-links {
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.lessons__lesson__additional-links a {
+	display: inline-block;
+	margin-left: 30px;
+	color: rgba(33, 33, 179, 0.8);
+}
+
+.lessons__lesson:first-child {
+	color: #008f00;
+}
+
+.lessons__lesson:first-child a {
+	color: inherit;
+	border-bottom-color: rgba(0, 143, 0, 0.3);
+}
+
+.lessons__lesson:first-child .lessons__lesson__additional-links a {
+	color: rgba(0, 143, 0, 0.8);
+}

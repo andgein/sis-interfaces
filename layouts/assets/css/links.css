@@ -1,0 +1,28 @@
+.links-tree {
+	font-weight: 300;
+	font-size: 20px;	
+}
+
+.links-tree li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.links-tree .list-title {
+	font-weight: 500;
+}
+
+.links-tree li > ul {
+	padding-left: 30px;
+}
+
+.links-tree li ul li ul li {
+	font-size: 16px;
+	color: rgba(33, 33, 179, 0.8);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.links-tree li ul li ul li a {
+	color: inherit;
+}
