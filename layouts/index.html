@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Параллель C.py</title>
+    <title>ЛКШ 2017</title>
 
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/fonts.css" rel="stylesheet">
     <link href="assets/css/common.css" rel="stylesheet">
 
     <!-- Stylesheets for different sections -->
-    <link href="assets/css/lessons.css" rel="stylesheet">
+    <link href="assets/css/schedule.css" rel="stylesheet">
     <link href="assets/css/links.css" rel="stylesheet">
     <link href="assets/css/teachers.css" rel="stylesheet">
 
@@ -26,7 +26,7 @@
     <header>
         <nav class="main-menu">
             <ul>
-                <li class="current"><a href="index.html">Учёба</a></li>
+                <li class="current"><a>Учёба</a></li>
                 <li><a href="speccourses-and-clubs.html">Спецкурсы и клубы</a></li>
                 <li><a href="#">Спорт и турниры</a></li>
             </ul>
@@ -38,7 +38,7 @@
                 <li><a href="#"><span class="parallel-name">A'</span></a></li>
                 <li><a href="#"><span class="parallel-name">B</span></a></li>
                 <li><a href="#"><span class="parallel-name">B'</span></a></li>
-                <li class="current"><span class="parallel-name">C.py</span></li>
+                <li><a href="parallel-page.html"><span class="parallel-name">C.py</span></a></li>
                 <li><a href="#"><span class="parallel-name">C.cpp</span></a></li>
                 <li><a href="#"><span class="parallel-name">C'</span></a></li>
                 <li><a href="#"><span class="parallel-name">P</span></a></li>
@@ -49,73 +49,83 @@
     <main>
         <div class="row">
             <div class="column">
-                <section class="lessons dont-mark-first">
+                <section class="schedule">
                     <div class="section__title">
-                        Занятия
-                        <div class="additional-info">
-                            <a href="#">Общие результаты</a>
-                        </div>
+                        Расписание
                     </div>
                     <div class="section__body">
-                        <div class="lessons__lesson">
-                            <div class="lessons__lesson__index">6</div>
-                            <div class="lessons__lesson__title">
-                                <a href="#">Алгоритм Дейкстры</a>
-                            </div>
-                            <div class="lessons__lesson__additional-info">
-                                <a href="#">вход</a>
-                                <a href="#">результаты</a>
-                            </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">7:00</div>
+                            Подъём и зарядка
                         </div>
-                        <div class="lessons__lesson">
-                            <div class="lessons__lesson__index">5</div>
-                            <div class="lessons__lesson__title">
-                                <a href="#">Поиск в глубину, топологическая сортировка</a>
-                            </div>
-                            <div class="lessons__lesson__additional-info">
-                                <a href="#">вход</a>
-                                <a href="#">результаты</a>
-                            </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">8:00</div>
+                            Завтрак
                         </div>
-                        <div class="lessons__lesson">
-                            <div class="lessons__lesson__index">4</div>
-                            <div class="lessons__lesson__title">
-                                <a href="#">Графы, поиск в ширину</a>
-                            </div>
-                            <div class="lessons__lesson__additional-info">
-                                <a href="#">вход</a>
-                                <a href="#">результаты</a>
-                            </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">8:30</div>
+                            Первая пара
                         </div>
-                        <div class="lessons__lesson">
-                            <div class="lessons__lesson__index">3</div>
-                            <div class="lessons__lesson__title">
-                                <a href="#">Быстрая сортировка, сортировка кучей</a>
-                            </div>
-                            <div class="lessons__lesson__additional-info">
-                                <a href="#">вход</a>
-                                <a href="#">результаты</a>
-                            </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">10:30</div>
+                            Полдник
                         </div>
-                        <div class="lessons__lesson">
-                            <div class="lessons__lesson__index">2</div>
-                            <div class="lessons__lesson__title">
-                                <a href="#">Словари, множества, хеширования</a>
-                            </div>
-                            <div class="lessons__lesson__additional-info">
-                                <a href="#">вход</a>
-                                <a href="#">результаты</a>
-                            </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">11:00</div>
+                            Вторая пара
                         </div>
-                        <div class="lessons__lesson">
-                            <div class="lessons__lesson__index">1</div>
-                            <div class="lessons__lesson__title">
-                                <a href="#">Комбинаторика</a>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">13:00</div>
+                            Обед
+                        </div>
+                        <div class="schedule__item important">                            
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time">14:00</div>
+                                Что такое время<span class="schedule__item__owner">Антон Полднев</span>
                             </div>
-                            <div class="lessons__lesson__additional-info">
-                                <a href="#">вход</a>
-                                <a href="#">результаты</a>
+                            <div class="schedule__item__location">Корабль 43</div>
+                        </div>
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time duplicate">14:00</div>
+                                Парадокс Банаха–Тарского<span class="schedule__item__owner">Андрей Гейн</span>
                             </div>
+                            <div class="schedule__item__location">Администрация</div>
+                        </div>
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time">16:00</div>
+                                Игра не фортепиано<span class="schedule__item__owner">Валентина Маврина</span>
+                            </div>
+                            <div class="schedule__item__location">Гнездо</div>
+                            <div class="schedule__item__additional-info">Запись на столовой</div>
+                        </div>
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time duplicate">16:00</div>
+                                TED-клуб<span class="schedule__item__owner">Андрей Гейн</span>
+                            </div>
+                            <div class="schedule__item__location">Гараж</div>
+                            <div class="schedule__item__additional-info">Тема: «Наука и образование»</div>
+                        </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">18:00</div>
+                            Ужин
+                        </div>
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time">19:00</div>
+                                Что? Где? Когда?
+                            </div>
+                            <div class="schedule__item__location">Около четвёртого комповника</div>
+                        </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">21:30</div>
+                            Мягкий отбой
+                        </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">22:00</div>
+                            Жёсткий отбой
                         </div>
                     </div>
                 </section>
@@ -124,35 +134,16 @@
                     <div class="section__title">Ссылки</div>
                     <div class="section__body">
                         <ul class="links-tree">
-                            <li><a href="#">Какая-то ссылка</a></li>
-                            <li>
-                                <span class="list-title">Языки программирования</span>
-                                <ul>
-                                    <li><a href="#">Ликбез по указателям</a></li>
-                                    <li><a href="#">Ликбез по ссылкам</a></li>
-                                    <li><a href="#">Шаблон решения на Java</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <span class="list-title">Соревнования по анализу данных</span>
-                                <ul>
-                                    <li>
-                                        <a href="#">Сайт ML-тренировок</a>
-                                        <ul>
-                                            <li><a href="#">группа тренировок на фейсбуке</a></li>
-                                            <li><a href="#">ютуб-канал с записями и трансляцией</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Kaggle</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="#">Полезный софт и документация</a></li>
+                            <li><a href="#">Телеграм-канал с&nbsp;объявлениями</a></li>
+                            <li>Угадай мелодию: <a href="#">песни</a>, <a href="#">результаты</a></li>
                         </ul>
                     </div>
                 </section>
             </div>
             <div class="column">
                 <section class="teachers">
-                    <div class="section__title">Преподаватели C.py</div>
+                    <div class="section__title">Важные люди</div>
                     <div class="section__body">
                         <div class="teachers__teacher">
                             <img src="assets/images/teachers/sokolov.jpg" title="Евгений Соколов" class="avatar" />

@@ -1,5 +1,6 @@
 section.events {
 	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 @media (max-width: 940px) {
@@ -10,18 +11,17 @@ section.events {
 
 .events__event {
 	margin-top: 10px;
-	margin-bottom: 20px;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: 300;	
 }
 
 .events__event__owner {
-	color: rgb(135, 135, 135);
+	color: rgb(155, 155, 155);
 }
 
 .events__event__owner::before {
-	content: '— ';
+	content: ' — ';
 }
 
 .events__event__location,

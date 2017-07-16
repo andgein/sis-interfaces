@@ -1,0 +1,65 @@
+.schedule {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
+.schedule__item {
+	position: relative;
+	color: rgb(155, 155, 155);	
+}
+
+.schedule__item.important {
+	color: black;
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.schedule__item__time {
+	position: absolute;
+	left: -60px;
+	width: 45px;
+	text-align: right;
+}
+
+.schedule__item__time.duplicate {
+	display: none;
+}
+
+@media (max-width: 940px) {
+	.schedule__item__time {
+		position: initial;
+		display: inline-block;
+		text-align: left;
+		width: 50px;
+	}
+
+	.schedule__item__time.duplicate {
+		display: inline-block;
+	}
+}
+
+.schedule__item__owner {
+	color: rgb(155, 155, 155);
+}
+
+.schedule__item__owner::before {
+	content: ' — '
+}
+
+.schedule__item__location,
+.schedule__item__additional-info {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.schedule__item__location {
+	color: #f58a4f;
+}
+
+.schedule__item__additional-info {
+	margin-left: 30px;
+}

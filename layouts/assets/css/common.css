@@ -59,7 +59,7 @@ header nav ul {
 	}
 
 	header nav.parallels-menu ul {
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 }
 
@@ -90,10 +90,9 @@ header nav.main-menu ul > li {
 header nav.main-menu ul > li.current {
 	font-weight: 500;
 	border-bottom-color: #faa41a;
-	padding: 13px 25px 12px;
 }
 
-header nav.main-menu ul > li:not(.current):hover {
+header nav.main-menu ul > li:hover a[href] {
 	color: #faa41a;
 }
 
@@ -102,6 +101,10 @@ header nav.main-menu ul > li > a {
 	border-bottom-width: 0;
 	padding: 13px 25px 12px;
 	display: inline-block;
+}
+
+header nav.main-menu ul > li.current > a[href] {
+	font-weight: 200;
 }
 
 @media (max-width: 620px) { 
@@ -233,7 +236,7 @@ section .section__title {
 section .section__title small {
 	margin-left: 25px;
 	font-size: 20px;
-	color: rgb(135, 135, 135);
+	color: rgb(155, 155, 155);
 }
 
 section .section__title .additional-info {
