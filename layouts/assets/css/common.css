@@ -105,7 +105,8 @@ header nav.parallels-menu ul > li {
 	vertical-align: top;
 }
 
-header nav.parallels-menu ul > li > a {
+header nav.parallels-menu ul > li > a,
+header nav.parallels-menu ul > li.current .parallel-name {
 	padding: 10px 17px 12px;
 	display: inline-block;
 	border-bottom: 0;
@@ -124,6 +125,10 @@ header nav.parallels-menu ul > li > a .parallel-name {
 
 header nav.parallels-menu ul > li > a:hover .parallel-name {
 	border-bottom-color: rgba(106, 106, 239, 0.3);
+}
+
+header nav.parallels-menu ul > li.current {
+	font-weight: 500;
 }
 
 header nav.parallels-menu .parallels-menu-image img {
