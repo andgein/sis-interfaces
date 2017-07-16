@@ -121,20 +121,37 @@ header nav.main-menu ul > li.current > a[href] {
 	font-weight: 200;
 }
 
+.visible-on-small-menu {
+	display: none;
+}
+
 @media (max-width: 620px) { 
-	header nav.main-menu ul > li {
-		display: block;
+	header nav.main-menu {
+		margin-left: -12px;
 	}
 
 	header nav.main-menu ul > li > a,
 	header nav.main-menu ul > li.current {
 		padding-left: 0;
 		padding-right: 0;
-		padding-bottom: 2px;
 	}
 
-	header nav.main-menu {
-		padding-bottom: 10px;
+	header nav.main-menu ul > li > a {
+		margin: 0 12px;
+	}
+
+	.visible-on-small-menu {
+		display: inline-block;
+	}
+
+	.hidden-on-small-menu {
+		display: none;
+	}
+}
+
+@media (max-width: 300px) {
+	header nav.main-menu ul > li {
+		font-size: 20px;
 	}
 }
 
