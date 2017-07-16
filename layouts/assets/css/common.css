@@ -19,6 +19,8 @@ html {
 body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 a {
@@ -127,8 +129,8 @@ header nav.parallels-menu ul > li {
 }
 
 header nav.parallels-menu ul > li > a,
-header nav.parallels-menu ul > li.current .parallel-name {
-	padding: 10px 17px 12px;
+header nav.parallels-menu ul > li.current > .parallel-name {
+	padding: 10px 17px 16px;
 	display: inline-block;
 	border-bottom: 0;
 }
@@ -139,6 +141,10 @@ header nav.parallels-menu ul > li.current .parallel-name {
 		padding-right: 12px;
 	}
 }
+
+header nav.parallels-menu ul > li.current > a {
+	background-color: #ffe4b5;
+} 
 
 header nav.parallels-menu ul > li > a .parallel-name {
 	border-bottom: 1px solid rgba(33, 33, 179, 0.3);
@@ -163,7 +169,7 @@ header nav.parallels-menu .parallels-menu-image img {
 	}
 }
 
-/* Headers */
+/* Headers and text */
 h1 {
 	font-size: 30px;
 	font-weight: 300;
@@ -180,6 +186,25 @@ h3 {
 	font-size: 18px;
 	font-weight: 500;
 	margin-top: 20px;
+}
+
+h1 + p, h2 + p, h3 + p {
+	margin-top: 25px;
+}
+
+p {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 20px;
+	max-width: 600px;
+}
+
+p.large {
+	max-width: 800px;
+}
+
+p.xlarge {
+	max-width: 1000px;
 }
 
 /* Rows and columns */
