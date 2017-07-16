@@ -63,20 +63,14 @@
 		display: inline-block;
 	}
 
-	.schedule__item__owner {
+	.schedule__item__owner,
+	.schedule__item__location,
+	.schedule__item__additional-info {
 		display: block;
 		margin-left: 53px;
 	}
 
 	.schedule__item__owner::before {
 		content: '';
-	}
-
-	.schedule__item__location {
-		margin-left: 53px;
-	}
-
-	.schedule__item__additional-info {
-		margin-left: 15px;
 	}
 }
