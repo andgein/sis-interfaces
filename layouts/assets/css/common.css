@@ -56,7 +56,7 @@ header nav ul {
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	letter-spacing: 0;
+	letter-spacing: -1px;
 }
 
 /* Container width for small screen */
