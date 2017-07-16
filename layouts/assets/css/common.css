@@ -113,8 +113,12 @@ header nav.main-menu ul > li:hover a[href] {
 header nav.main-menu ul > li > a {
 	color: inherit;
 	border-bottom-width: 0;
-	padding: 13px 25px 12px;
+	padding: 13px 25px 11px;
 	display: inline-block;
+}
+
+header nav.main-menu ul > li.current > a {	
+	padding-bottom: 12px;
 }
 
 header nav.main-menu ul > li.current > a[href] {
@@ -134,6 +138,7 @@ header nav.main-menu ul > li.current > a[href] {
 	header nav.main-menu ul > li.current {
 		padding-left: 0;
 		padding-right: 0;
+		font-size: 20px;
 	}
 
 	header nav.main-menu ul > li > a {
@@ -151,7 +156,7 @@ header nav.main-menu ul > li.current > a[href] {
 
 @media (max-width: 300px) {
 	header nav.main-menu ul > li {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
@@ -169,13 +174,18 @@ header nav.parallels-menu ul > li.current > .parallel-name {
 	border-bottom: 0;
 }
 
-@media (max-width: 920px) { 
+@media (max-width: 640px) { 
 	header nav.parallels-menu ul > li > a,
 	header nav.parallels-menu ul > li.current > .parallel-name {
 		padding-left: 10px;
 		padding-right: 10px;
 		padding-bottom: 10px;
 		font-size: 20px;
+	}
+
+	header nav.parallels-menu ul > li:last-child > a,
+	header nav.parallels-menu ul > li:last-child > .parallel-name {
+		padding-right: 0;
 	}
 }
 

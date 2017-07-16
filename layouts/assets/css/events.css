@@ -3,15 +3,22 @@ section.events {
 	margin-bottom: 20px;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 620px) {
 	section.events.events-clubs {
 		margin-left: 80px;
+	}
+}
+
+@media (max-width: 940px) {
+	section.events.events-clubs {
+		margin-left: 200px;
 	}
 
 	.events .date-invisible-place {
 		display: none;
 	}
 }
+
 
 .events__event {
 	margin-top: 10px;
@@ -43,7 +50,7 @@ section.events {
 	margin-left: 30px;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 620px) {
 	.events__event__owner {
 		display: block;
 	}

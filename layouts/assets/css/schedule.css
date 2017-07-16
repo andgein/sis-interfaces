@@ -24,10 +24,6 @@
 	text-align: right;
 }
 
-.schedule__item__time.duplicate {
-	display: none;
-}
-
 .schedule__item__owner {
 	color: rgb(155, 155, 155);
 }
@@ -59,13 +55,16 @@
 		width: 50px;
 	}
 
-	.schedule__item__time.duplicate {
-		display: inline-block;
-	}
-
-	.schedule__item__owner,
 	.schedule__item__location,
 	.schedule__item__additional-info {
+		display: block;
+		margin-left: 53px;
+	}
+	
+}
+
+@media (max-width: 620px) {
+	.schedule__item__owner {
 		display: block;
 		margin-left: 53px;
 	}
