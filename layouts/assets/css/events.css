@@ -2,6 +2,12 @@ section.events {
 	margin-top: 10px;
 }
 
+@media (max-width: 940px) {
+	section.events.events-clubs {
+		margin-left: 80px;
+	}
+}
+
 .events__event {
 	margin-top: 10px;
 	margin-bottom: 20px;
