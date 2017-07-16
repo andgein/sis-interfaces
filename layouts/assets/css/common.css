@@ -71,6 +71,10 @@ header nav ul {
 	header nav.parallels-menu ul {
 		padding: 0 15px 0;
 	}
+
+	main {
+		padding-right: 0;
+	}
 }
 
 /* Container width for large screen */
@@ -126,6 +130,11 @@ header nav.main-menu ul > li.current > a[href] {
 	header nav.main-menu ul > li.current {
 		padding-left: 0;
 		padding-right: 0;
+		padding-bottom: 2px;
+	}
+
+	header nav.main-menu {
+		padding-bottom: 10px;
 	}
 }
 
@@ -144,9 +153,12 @@ header nav.parallels-menu ul > li.current > .parallel-name {
 }
 
 @media (max-width: 920px) { 
-	header nav.parallels-menu ul > li > a {
-		padding-left: 12px;
-		padding-right: 12px;
+	header nav.parallels-menu ul > li > a,
+	header nav.parallels-menu ul > li.current > .parallel-name {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 7px;
+		font-size: 20px;
 	}
 }
 
