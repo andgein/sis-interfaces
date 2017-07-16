@@ -4,8 +4,8 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-*:before,
-*:after {
+*::before,
+*::after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -56,7 +56,7 @@ header nav ul {
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	letter-spacing: -1em;
+	letter-spacing: 0;
 }
 
 /* Container width for small screen */
@@ -113,7 +113,7 @@ header nav.main-menu ul > li:hover a[href] {
 header nav.main-menu ul > li > a {
 	color: inherit;
 	border-bottom-width: 0;
-	padding: 13px 25px 11px;
+	padding: 13px 25px 11px 25px;
 	display: inline-block;
 }
 
@@ -138,13 +138,13 @@ header nav.main-menu ul > li.current > a[href] {
 	header nav.main-menu ul > li.current {
 		padding-left: 0;
 		padding-right: 0;
-		font-size: 20px;
+		font-size: 20px;		
 	}
 
 	header nav.main-menu ul > li > a {
 		margin: 0 12px;
 	}
-
+	
 	.visible-on-small-menu {
 		display: inline-block;
 	}
@@ -169,7 +169,7 @@ header nav.parallels-menu ul > li {
 
 header nav.parallels-menu ul > li > a,
 header nav.parallels-menu ul > li.current > .parallel-name {
-	padding: 10px 17px 16px;
+	padding: 10px 17px 16px 17px;
 	display: inline-block;
 	border-bottom: 0;
 }
