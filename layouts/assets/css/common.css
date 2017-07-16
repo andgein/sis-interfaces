@@ -40,6 +40,14 @@ main {
 	margin-right: auto;
 }
 
+main > h1,
+main > h2,
+main > h3,
+main > p,
+main > table {
+	padding-right: 15px;
+}
+
 header {
 	width: 100%;
 }
@@ -57,11 +65,11 @@ header nav ul {
 		display: block;
 		width: auto;
 		padding-left: 25px;
-		padding-right: 0px;
+		padding-right: 25px;
 	}
 
 	header nav.parallels-menu ul {
-		padding: 0 15px;
+		padding: 0 15px 0;
 	}
 }
 
@@ -186,6 +194,12 @@ h3 {
 	font-size: 18px;
 	font-weight: 500;
 	margin-top: 20px;
+}
+
+@media (max-width: 940px) {
+	h1, h2, h3 {
+		margin-top: 10px;
+	}
 }
 
 h1 + p, h2 + p, h3 + p {
