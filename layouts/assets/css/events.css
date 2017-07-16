@@ -9,16 +9,17 @@ section.events {
 	}
 }
 
-@media (max-width: 940px) {
+@media (min-width: 620px) and (max-width: 940px) {
 	section.events.events-clubs {
 		margin-left: 200px;
 	}
+}
 
+@media (max-width: 940px) {
 	.events .date-invisible-place {
 		display: none;
 	}
 }
-
 
 .events__event {
 	margin-top: 10px;
