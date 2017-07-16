@@ -1,0 +1,34 @@
+section.events {
+	margin-top: 10px;
+}
+
+.events__event {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 300;	
+}
+
+.events__event__owner {
+	color: rgb(135, 135, 135);
+}
+
+.events__event__owner::before {
+	content: '— ';
+}
+
+.events__event__location,
+.events__event__additional-info {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.events__event__location {
+	color: #f58a4f;
+}
+
+.events__event__additional-info {
+	margin-left: 30px;
+}
