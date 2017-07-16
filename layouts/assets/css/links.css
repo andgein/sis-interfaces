@@ -16,8 +16,15 @@
 	padding-left: 30px;
 }
 
+@media (max-width: 940px) {
+	.links-tree li > ul {
+		padding-left: 15px;
+	}
+}
+
 .links-tree li ul li ul li {
 	font-size: 16px;
+	line-height: 18px;
 	color: rgba(33, 33, 179, 0.8);
 	margin-top: 5px;
 	margin-bottom: 5px;

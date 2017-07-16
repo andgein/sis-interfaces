@@ -38,6 +38,12 @@
 	color: rgba(33, 33, 179, 0.8);
 }
 
+@media (max-width: 940px) {
+	.lessons__lesson__additional-links a {
+		margin-left: 15px;
+	}
+}
+
 .lessons__lesson:first-child {
 	color: #008f00;
 }

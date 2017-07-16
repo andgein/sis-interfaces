@@ -17,8 +17,18 @@
 	margin-right: 8px;
 }
 
+.teachers__teacher__name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 .teachers__teacher__info {
 	line-height: 22px;
+	height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .teachers__teacher__social {
