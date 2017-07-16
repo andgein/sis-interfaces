@@ -7,6 +7,10 @@ section.events {
 	section.events.events-clubs {
 		margin-left: 80px;
 	}
+
+	.events .date-invisible-place {
+		display: none;
+	}
 }
 
 .events__event {
