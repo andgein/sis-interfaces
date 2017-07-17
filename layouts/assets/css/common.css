@@ -77,6 +77,18 @@ header nav ul {
 	}
 }
 
+/* Container width for iPhone <= 5 and really small phones */ 
+@media (max-width: 320px) {
+	main, header nav ul {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	header nav.parallels-menu ul {
+		padding: 0;
+	}
+}
+
 /* Container width for large screen */
 @media (min-width: 1300px) {
 	main, header nav ul {
