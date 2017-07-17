@@ -16,7 +16,7 @@
 	padding-left: 30px;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 620px) {
 	.links-tree li > ul {
 		padding-left: 15px;
 	}

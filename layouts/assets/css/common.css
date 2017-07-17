@@ -197,6 +197,10 @@ header nav.parallels-menu ul > li > a .parallel-name {
 	border-bottom: 1px solid rgba(33, 33, 179, 0.3);
 }
 
+header nav.parallels-menu ul > li .current > .parallel-name {
+	border-bottom: 1px solid transparent;
+}
+
 header nav.parallels-menu ul > li > a:hover .parallel-name {
 	border-bottom-color: rgba(106, 106, 239, 0.3);
 }
@@ -286,6 +290,16 @@ p.xlarge {
 		width: 100%;
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+
+	.row .column.small {
+		width: 50%;
+	}
+}
+
+@media (max-width: 620px) {
+	.row .column.small {
+		width: 100%;
 	}
 }
 
