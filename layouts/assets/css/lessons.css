@@ -42,6 +42,27 @@
 @media (max-width: 620px) {
 	.lessons__lesson__additional-info a {
 		margin-left: 15px;
+		left: 0;
+		width: auto;
+	}
+
+	.lessons__lesson__additional-info a:first-child,
+	.lessons__lesson__title {
+		margin-left: 25px;
+	}
+
+	.lessons__lesson__index {
+	    display: inline-block;
+	    text-align: right;
+	    left: 0px;
+	}
+
+	.lessons__lesson:hover .lessons__lesson__index {
+		display: inline-block;
+	}
+
+	.lessons__lesson__index::after {
+		content: '. ';
 	}
 }
 
