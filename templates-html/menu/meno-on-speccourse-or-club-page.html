@@ -1,0 +1,18 @@
+    <header>
+        <!--
+            Главное меню. Нужно, скорее всего, всем.
+        -->
+        <nav class="main-menu">
+            <ul>
+                <li><a href="/">Учёба</a></li>
+                <!--
+                    Класс current у этого пункта (тег <li>) означает, что ваша страница относится к спецкурсам или клубам.
+
+                    Для страницы со списком спецкурсов и клубов нужно удалить ссылку (тег <a>).
+                    Для всех остальных ссылка должна остаться.
+                -->
+                <li class="current"><a href="/events/"><span class="hidden-on-small-menu">Спецкурсы</span><span class="visible-on-small-menu">С/к</span> и клубы</a></li>
+                <li><a href="/tournaments/"><span class="hidden-on-small-menu">Спорт и турниры</span><span class="visible-on-small-menu">Турниры</span></a></li>
+            </ul>
+        </nav>
+    </header>

@@ -1,0 +1,47 @@
+    <header>
+        <!--
+            Главное меню. Нужно, скорее всего, всем.
+        -->
+        <nav class="main-menu">
+            <ul>
+                <!--
+                    Класс current у первого пункта (тег <li>) означает, что ваша страница относится к учёбе.
+
+                    Для самой главной страниц нужно удалить ссылку (тег <a>) вокруг «Учёба».
+                    Для всех остальных ссылка должна остаться.
+                -->
+                <li class="current"><a href="/">Учёба</a></li>
+                <li><a href="/events/"><span class="hidden-on-small-menu">Спецкурсы</span><span class="visible-on-small-menu">С/к</span> и клубы</a></li>
+                <li><a href="/tournaments/"><span class="hidden-on-small-menu">Спорт и турниры</span><span class="visible-on-small-menu">Турниры</span></a></li>
+            </ul>
+        </nav>
+        <!--
+            Меню со списком параллелей. Нужно на всех страницах параллелей и страницах об учёбе.
+        -->
+        <nav class="parallels-menu">            
+            <ul>
+                <li class="parallels-menu-image"><img src="assets/images/parallels-menu.png" /></li>
+                <!--
+                    Если вы делаете страницу параллели, то уберите соответствующую ссылку (тег <a>),
+                    а к элементу списка (тег <li>) добавьте класс current. Должно получиться:
+
+                    <li class="current"><span class="parallel-name">C.py</span></li>
+
+                    Если вы делаете не страницу параллели, а какую-нибудь внутреннюю страницу
+                    (например, результаты промежуточного коллокивума в вашей параллели), то
+                    добавьте класс current к соответствующему пункту меню, а ссылку не удаляйте.
+                    Должно получиться:
+
+                    <li class="current"><a href="/C.py/"><span class="parallel-name">C.py</span></a></li>
+                -->
+                <li><a href="/A/"><span class="parallel-name">A</span></a></li>
+                <li><a href="/A'/"><span class="parallel-name">A'</span></a></li>
+                <li><a href="/B/"><span class="parallel-name">B</span></a></li>
+                <li><a href="/B'/"><span class="parallel-name">B'</span></a></li>
+                <li><a href="/C.py/"><span class="parallel-name">C.py</span></a></li>
+                <li><a href="/C.cpp/"><span class="parallel-name">C.cpp</span></a></li>
+                <li><a href="/C'/"><span class="parallel-name">C'</span></a></li>
+                <li><a href="/P/"><span class="parallel-name">P</span></a></li>
+            </ul>
+        </nav>
+    </header>

@@ -1,0 +1,104 @@
+<!--
+    Это блок «Расписание». Он используется на главной странице и скорее всего больше нигде.
+-->
+                
+                <section class="schedule">
+
+                    <!-- Заголовок блока -->
+                    <div class="section__title">
+                        Расписание
+                    </div>
+
+                    <!-- Содержимое блока -->
+                    <div class="section__body">
+
+                        <!-- Блок «Расписание» состоит из элементов — schedule__item'ов -->
+                        <div class="schedule__item">
+                            <!-- У каждого из них есть время-->
+                            <div class="schedule__item__time">7:00</div>
+                            <!-- И, собственно описание -->
+                            Подъём и зарядка
+                        </div>
+                        <!-- Ещё несколько примеров: -->
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">8:00</div>
+                            Завтрак
+                        </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">8:30</div>
+                            Первая пара
+                        </div>
+                        <!-- ... -->
+                        
+                        <!--
+                            Важные элементы (не повторяющиеся изо дня в день как завтрак и зарядка) дополнительно помечаются классом important.
+                            Они станут темнее и крупнее.
+                        -->
+                        <div class="schedule__item important">
+                            <!--
+                                Чтобы указать проводящего и локацию, нужна более сложная структура.
+                                Добавляем тег <div class="schedule__item__title> вокруг времени, названия и проводящего.
+                            -->
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time">14:00</div>
+                                Что такое время<span class="schedule__item__owner">Антон Полднев</span>
+                            </div>
+                            <!-- А здесь указываем локацию: -->
+                            <div class="schedule__item__location">Корабль 43</div>
+                        </div>
+
+                        <!-- Ещё один спецкурс-->
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <!-- Он начинается в то же время, что и предыдущий, поэтому время второй раз не указываем, незачем дублировать. -->
+                                <div class="schedule__item__time"></div>
+                                Парадокс Банаха–Тарского<span class="schedule__item__owner">Андрей Гейн</span>
+                            </div>
+                            <div class="schedule__item__location">Администрация</div>
+                        </div>
+
+                        <!-- Клубы. Оформляются аналогично спецкурсам -->
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time">16:00</div>
+                                Игра на&nbsp;фортепиано<span class="schedule__item__owner">Валентина Маврина</span>
+                            </div>
+                            <div class="schedule__item__location">Гнездо</div>
+                            <!-- У таких событий может быть дополнительная информация. Она указывается так: -->
+                            <div class="schedule__item__additional-info">Запись на&nbsp;столовой</div>
+                        </div>
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time"></div>
+                                TED-клуб<span class="schedule__item__owner">Андрей Гейн</span>
+                            </div>
+                            <div class="schedule__item__location">Гараж</div>
+                            <div class="schedule__item__additional-info">Тема: «Наука и образование»</div>
+                        </div>
+
+                        <!-- Снова «неважный» элемент в расписании-->
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">18:00</div>
+                            Ужин
+                        </div>
+
+                        <!-- Вечернее мероприятие -->
+                        <div class="schedule__item important">
+                            <div class="schedule__item__title">
+                                <div class="schedule__item__time">19:00</div>
+                                Что? Где? Когда?
+                            </div>
+                            <div class="schedule__item__location">Около четвёртого комповника</div>
+                        </div>
+
+                        <!-- Отбои -->
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">21:30</div>
+                            Мягкий отбой
+                        </div>
+                        <div class="schedule__item">
+                            <div class="schedule__item__time">22:00</div>
+                            Жёсткий отбой
+                        </div>
+                    </div>
+                </section>

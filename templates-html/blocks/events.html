@@ -1,0 +1,99 @@
+<!--
+    Это блок «События», используется для описания спецкурсов и клубов, и, скорее всего, больше нигде.
+
+    Чтобы всё работало как надо, нужно создать одну строчку (<div class="row">) с двумя колонками для каждого дня.
+    В первую колонку помещается блок «События» со спецкурсами, а во вторую — с клубами. Колонки рекомендуется делать маленькими (<div class="column small">).
+-->
+                
+                <!-- Блок со спецкурсами -->
+                <section class="events events-speccourses">
+
+                    <!-- Заголовок блока. Его нужно оставить только в самом верхнем дне -->
+                    <div class="section__title">
+                        Спецкурсы
+                        <small>с 14:00</small>
+                    </div>
+
+                    <!-- Дата, указывается только в спецкурсах -->
+                    <h3>Сегодня, 1 августа</h3>
+
+                    <!-- Содержимое блока -->
+                    <div class="section__body">
+                        <!-- Каждое событие (спецкурс или клуб) описывается таким небольшим подблоком: -->
+                        <div class="events__event">
+                            <!-- Название и проводящий -->
+                            <div class="events__event__title">                                
+                                Что такое время
+                                <span class="events__event__owner">Антон Полднев</span>
+                            </div>
+
+                            <!-- Локация. Указывается только для сегодняшних спецкурсов. -->
+                            <div class="events__event__location">
+                                Гнездо
+                            </div>
+
+                            <!-- Дополнительная информация для сегодняшнего спецкурса. -->
+                            <div class="events__event__additional-info">
+                                Тема: «Наука и образование»
+                            </div>
+
+                            <!-- Ссылки на материалы. Указывается только для уже прошедших спецкурсов. -->
+                            <div class="events__event__additional-info">
+                                <ul>
+                                    <li><a href="...">презентация</a></li>
+                                    <li><a href="...">сайт с&nbsp;примерами</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Ещё один спецкурс: -->
+                        <div class="events__event">
+                            <div class="events__event__title">
+                                Парадокс Банаха–Тарского
+                                <span class="events__event__owner">Андрей Гейн</span>
+                            </div>
+                            <div class="events__event__location">
+                                Гараж
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--
+                    Блок с клубами. Всё аналогично спецкурсам, отличающиеся вещи прокомментированы.
+                    В одном месте класс events-speccourses заменяется на events-clubs.
+                -->
+                <section class="events events-clubs">
+                    <div class="section__title">
+                        Клубы
+                        <small>с 16:00</small>
+                    </div>
+
+                    <!-- У клубов не указывается дата. Но место отступить надо, поэтому используем такой хак: -->
+                    <h3 class="date-invisible-place">&nbsp;</h3>
+
+                    <div class="section__body">
+                        <div class="events__event">
+                            <div class="events__event__title">
+                                Пои-клуб
+                                <span class="events__event__owner">Святослав Дженжер</span>
+                            </div>
+                            <div class="events__event__location">
+                                Перед Романтиком
+                            </div>
+                        </div>
+                        <div class="events__event">
+                            <div class="events__event__title">
+                                TED-клуб
+                                <span class="events__event__owner">Андрей Гейн</span>
+                            </div>
+                            <div class="events__event__location">
+                                Гараж
+                            </div>
+                            <div class="events__event__additional-info">
+                                Тема: «Наука и образование»
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
