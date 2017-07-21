@@ -1,0 +1,59 @@
+section.events {
+	/margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 620px) {
+	section.events.events-clubs {
+		margin-left: 80px;
+	}
+
+	.events .date-invisible-place {
+		display: none;
+	}
+}
+
+.events__event {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 300;	
+}
+
+.events__event__owner {
+	color: rgb(155, 155, 155);
+}
+
+.events__event__owner::before {
+	content: ' — ';
+}
+
+.events__event__location,
+.events__event__additional-info {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.events__event__location {
+	color: #f58a4f;
+}
+
+.events__event__additional-info {
+	margin-left: 30px;
+}
+
+@media (max-width: 620px) {
+	.events__event__owner {
+		display: block;
+	}
+
+	.events__event__owner::before {
+		content: '';
+	}
+
+	.events__event__location + .events__event__additional-info {
+		display: block;
+		margin-left: 0;
+	}
+}

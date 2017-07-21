@@ -1,0 +1,44 @@
+table {
+	margin-top: 25px;
+}
+
+table thead {
+	border-bottom: 1px solid black;
+}
+
+table th {
+	font-weight: 400;
+}
+
+table th,
+table td {
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 7px;
+	padding-right: 30px;
+} 
+
+table th {
+	padding-right: 20px;
+}
+
+table th:last-child,
+table td:last-child {
+	padding-right: 0;
+}
+
+table td {
+	max-width: 180px;
+}
+
+table td.large {
+	max-width: 360px
+}
+
+table td.xlarge {
+	max-width: 540px;
+}
+
+table td.xxlarge {
+	max-width: 720px;
+}
