@@ -2,6 +2,7 @@
     require_once 'inc/common.php';
     require_once 'inc/blocks.php';
     require_once 'inc/page.php';
+    require_once 'inc/pages.php';
 
     function exception_handler($exception)
     {
