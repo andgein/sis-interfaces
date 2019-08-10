@@ -151,12 +151,13 @@
                 $built_social = [];
                 foreach ($teacher['social'] as $type => $value)
                 {
-                    if (! in_array($type, array('vk', 'fb', 'telegram')))
+                    if (! in_array($type, array('vk', 'fb', 'telegram', 'instagram')))
                         throw new Exception('Неизвестный тип социальной ссылки у преподавателя: ' . $type);
 
                     if ($type == 'vk') $url = 'https://vk.com/' . (is_numeric($value) ? 'id' . $value : $value);
                     if ($type == 'fb') $url = 'https://facebook.com/' . $value;
                     if ($type == 'telegram') $url = 'https://t.me/' . $value;
+                    if ($type == 'instagram') $url = 'https://instagram.com/' . $value;
                     $built_social[] = ['type' => $type, 'title' => $teacher['name'], 'url' => $url];
                 }
                 $teacher['social'] = $built_social;

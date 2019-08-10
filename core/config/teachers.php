@@ -3,7 +3,7 @@
 $TEACHERS = [
     'Андрей Гейн' => [
         'info' => ['Преподаватель', '<a href="#">Ссылка во второй строке</a>'],
-        'social' => ['vk' => 'andgein', 'telegram' => 'andgein'],
+        'social' => ['vk' => 'andgein', 'telegram' => 'andgein', 'instagram' => 'AndrewGein'],
     ],
     'Андрей Станкевич' => [
         'name' => 'Андрей Сергеевич Станкевич',
